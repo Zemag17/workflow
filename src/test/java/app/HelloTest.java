@@ -12,15 +12,18 @@ public class HelloTest {
     @Test
     @DisplayName("El metodo hello world debe de devolver Hello World 🙋🏻‍♀️")
     public void helloWorld_StringHelloWorld_ReturnTrue(){
+        //Arrange
         String input = "Hello + World";
         
+        //Act
         String compute = helloWorld();
         
+        //Assert
         assertEquals(input, compute);    
     }
 
     public String helloWorld() {
-        String helloWorld = "Hello +" + " World";
+        String helloWorld = "Hello +" + "World";
         return helloWorld;
     }
 }
